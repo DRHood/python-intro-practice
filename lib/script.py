@@ -3,6 +3,10 @@ from capitals import states
 print("How well do you know your state capitals?")
 print("Let's find out.")
 
+for state in states:
+    state["correct"] = 0
+    state["incorrect"] = 0
+
 def begin():
     begin = input("Would you like to play a game? (y/n)")
     if begin == "y":
@@ -12,6 +16,7 @@ def begin():
         return
 
 def play_game():
-    print("This is where the game goes!")
+    for state in states:
+        guess_capital = input("What is yhe capital of " + state["name"] + "?")
 
 begin()
