@@ -4,7 +4,7 @@ print("How well do you know your state capitals?")
 print("Let's find out.")
 
 def begin():
-    input ("Would you like to play a game? (y/n)")
+    begin = input("Would you like to play a game? (y/n)")
     if begin == "y":
         return play_game()
     else:
