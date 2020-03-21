@@ -19,4 +19,9 @@ def play_game():
     for state in states:
         guess_capital = input("What is yhe capital of " + state["name"] + "?")
 
+        if guess_capital == state["capital"]:
+            print("Look at you, all smart and stuff!")
+        else:
+            print("Yeah...Not quite right.")
+
 begin()
