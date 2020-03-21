@@ -21,7 +21,11 @@ def play_game():
 
         if guess_capital == state["capital"]:
             print("Look at you, all smart and stuff!")
+            state["correct"] += 1
         else:
             print("Yeah...Not quite right.")
+            state["incorrect"] -= 1
+        print("Correct: {}".format(state["correct"]))
+        print("Incorrect: {}".format(state["correct"]))
 
 begin()
