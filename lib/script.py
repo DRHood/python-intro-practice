@@ -30,6 +30,7 @@ def play_game():
             print(random.choice(incorrect))
             incorrect_count += 1
 
+        print("You've answered {}".format(correct_count) + " out of {}".format(correct_count + incorrect_count) + " correctly.")
         print("Correct: {}".format(correct_count))
         print("Incorrect: {}".format(incorrect_count))
 
