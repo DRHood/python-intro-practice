@@ -1,4 +1,6 @@
 from capitals import states
+from responses import correct
+from responses import incorrect
 import random
 
 print("How well do you know your state capitals?")
@@ -22,10 +24,10 @@ def play_game():
         guess_capital = input("What is the capital of " + state["name"] + "?")
 
         if guess_capital == state["capital"]:
-            print("Look at you, all smart and stuff!")
+            print(random.choice(correct))
             correct_count += 1
         else:
-            print("Yeah...Not quite right.")
+            print(random.choice(incorrect))
             incorrect_count += 1
 
         print("Correct: {}".format(correct_count))
