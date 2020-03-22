@@ -1,4 +1,5 @@
 from capitals import states
+import random
 
 print("How well do you know your state capitals?")
 print("Let's find out.")
@@ -14,6 +15,8 @@ def begin():
 def play_game():
     correct_count = 0
     incorrect_count = 0
+
+    random.shuffle(states)
 
     for state in states:
         guess_capital = input("What is the capital of " + state["name"] + "?")
