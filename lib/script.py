@@ -31,4 +31,11 @@ def play_game():
         print("Correct: {}".format(correct_count))
         print("Incorrect: {}".format(incorrect_count))
 
+    play_again = input("Would you like to play again? (y/n)")
+    if play_again == "y":
+        return play_game()
+    else:
+        print("Until next time...")
+        return
+
 begin()
